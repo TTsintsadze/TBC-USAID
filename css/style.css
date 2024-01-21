@@ -2,8 +2,8 @@
     --content-width: 980px;
     --bg-color: #2b2b2b;
     --bg-color-dark: #161616;
-    --header_footer: rgb(26, 30, 31);
-    --text-lighter: rgb(244, 244, 244);
+    --header_footer: #1a1e1f;
+    --text-lighter: #f4f4f4;
     --text-secondary: #00aeef;
     --big-font-size: 2.625rem;
     --small-font-size: 0.875rem;
@@ -284,4 +284,66 @@ h5 {
 #arrow-right {
     right: 100px;
     transform: scaleX(-1);
+}
+
+/*Footer*/
+.footer {
+    padding: 64px 0 44px;
+    background-color: var(--header_footer);
+    gap: 24px;
+}
+
+.footer-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--content-width);
+}
+
+.footer-line:last-child {
+    align-items: flex-end;
+}
+
+.footer-line img {
+    height: 30px;
+    width: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px
+}
+
+.social-icon img {
+    height: 39px;
+    width: 39px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-info a,
+span {
+    font-size: var(--small-font-size);
+}
+
+.message-button {
+    height: 39px;
+    font-size: 16px;
+    font-family: "TBC X";
+    font-weight: var(--regular);
+    padding: 0px 32px;
+    background-color: var(--text-secondary);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--trans);
+}
+
+.message-button:hover {
+    background-color: var(--text-lighter);
+    color: var(--bg-color)
 }
