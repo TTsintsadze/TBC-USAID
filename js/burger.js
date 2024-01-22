@@ -2,13 +2,13 @@ const toggleMenu = () => {
     const navList = document.querySelector('.nav-list');
     navList.classList.toggle('active');
     const isOpen = navList.classList.contains('active');
-    document.querySelector('.burger-menu-icon').src = `img/burger_${isOpen ? 'open' : 'close'}.svg.svg`;
+    document.querySelector('.burger-menu-icon').src = `img/burger_${isOpen ? 'open' : 'close'}.svg`;
 };
 
 const closeMenu = () => {
     const navList = document.querySelector('.nav-list');
     navList.classList.remove('active');
-    document.querySelector('.burger-menu-icon').src = 'img/burger_close.svg.svg';
+    document.querySelector('.burger-menu-icon').src = 'img/burger_close.svg';
 };
 
 document.addEventListener('click', (event) => {

@@ -130,6 +130,7 @@ h5 {
 }
 
 .hero-section span {
+    display: block;
     font-size: 34px;
 }
 
@@ -196,7 +197,7 @@ h5 {
     height: 150px;
     border-radius: 6px;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
 
@@ -468,11 +469,13 @@ span {
 
     body {
         --content-width: 80%;
+        /* Enlarge content to 80% */
     }
 }
 
 @media screen and (max-width: 979px) {
     .card-list {
+        -ms-grid-columns: (1fr)(3);
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -498,6 +501,7 @@ span {
 
 @media screen and (max-width: 767px) {
     .card-list {
+        -ms-grid-columns: (1fr)(2);
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -524,7 +528,6 @@ span {
         margin-left: 8px
     }
 
-    /* burger menu */
     .burger-menu {
         display: block;
     }
@@ -538,6 +541,9 @@ span {
 
     .nav-list {
         display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         position: absolute;
         top: 70px;
@@ -550,6 +556,8 @@ span {
     }
 
     .nav-list.active {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -561,6 +569,7 @@ span {
 
 @media screen and (max-width: 500px) {
     .card-list {
+        -ms-grid-columns: (1fr)(1);
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -569,7 +578,7 @@ span {
     }
 
     .info-section h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 2rem;
     }
 
@@ -584,8 +593,13 @@ span {
     }
 
     .footer-line:last-child {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 24px;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 
@@ -595,13 +609,14 @@ span {
 
     .hero-section h1,
     .hero-section h1 span {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 }
 
 
 @media screen and (max-width: 330px) {
     .faq-flex {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         gap: 24px;
         margin-bottom: 24px;
