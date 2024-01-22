@@ -1,3 +1,5 @@
+@import url("https://cdn.web-fonts.ge/fonts/bpg-extrasquare-mtavruli/css/bpg-extrasquare-mtavruli.min.css");
+
 :root {
     --content-width: 980px;
     --bg-color: #2b2b2b;
@@ -19,17 +21,6 @@ html {
 body {
     background-color: var(--bg-color);
     color: var(--text-lighter);
-}
-
-h4 {
-    font-size: 24px;
-    font-weight: var(--regular);
-}
-
-h5 {
-    font-size: 18px;
-    font-weight: var(--regular);
-    line-height: 1.6em;
 }
 
 /* scroll */
@@ -132,6 +123,7 @@ h5 {
 .hero-section span {
     display: block;
     font-size: 34px;
+    font-family: "BPG ExtraSquare Mtavruli", sans-serif;
 }
 
 /*INFO*/
@@ -454,6 +446,18 @@ span {
 .message-button:hover {
     background-color: var(--text-lighter);
     color: var(--bg-color)
+}
+
+
+h4 {
+    font-size: 24px;
+    font-weight: var(--regular);
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: var(--regular);
+    line-height: 1.6em;
 }
 
 /*RESPONSIVE*/
