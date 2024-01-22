@@ -1,7 +1,19 @@
 const partnerLogos = ["usaid", "spaceInt", "tineti", "tegeta", "spectre", "tbcLeasing", "ufc"];
 const dotsContainer = document.getElementById("dots-container");
 let activeGroupIndex = 0;
-const logosPerGroup = 3;
+
+let logosPerGroup = getLogosPerGroup(); 
+
+window.addEventListener('resize', () => {
+    logosPerGroup = getLogosPerGroup(); 
+    console.log(logosPerGroup);
+});
+
+function getLogosPerGroup() {
+    const screenWidth = window.innerWidth;
+
+    return screenWidth < 571 ? 1 : screenWidth < 979 ? 2 : 3;
+}
 
 const createLogoElement = (imageUrl, altText) => {
   const logoLink = document.createElement("a");
