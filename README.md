@@ -17,7 +17,7 @@ JavaScript (js):
 	carousel.js: Enables functionality for the image slider.
 	course.js: Manages features related to courses section.
 
-ℹ️ README.md: Documentation file containing important project information.
+README.md: Documentation file containing important project information.
 
 index.html: The main HTML file representing the structure of the project.
 
