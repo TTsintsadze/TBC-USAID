@@ -19,13 +19,13 @@ JavaScript (js):
 
 ℹ️ README.md: Documentation file containing important project information.
 
-🏠 index.html: The main HTML file representing the structure of the project.
+index.html: The main HTML file representing the structure of the project.
 
 ## Technologies and Why
 HTML: Builds the structure.
 CSS: Styles things up.
 JavaScript: Adds interactivity.
 
-## 🚀 Getting Started
+## Getting Started
 1) Launching the Project:
 Open the HTML file (index.html) in your browser to see the project.
